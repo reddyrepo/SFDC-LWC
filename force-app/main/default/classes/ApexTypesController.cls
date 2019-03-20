@@ -1,3 +1,4 @@
+//Git commands 2nd test
 public with sharing class ApexTypesController {
 
     @AuraEnabled
