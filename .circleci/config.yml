@@ -222,7 +222,6 @@ workflows:
             - setup_dx_orgs:
                   context: trailhead
                   requires:
-                  requires:
                       - install_cli
                       - lint_aura
             - deploy_source:
