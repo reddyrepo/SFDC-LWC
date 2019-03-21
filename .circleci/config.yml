@@ -220,7 +220,8 @@ workflows:
                       branches:
                           ignore: master
             - setup_dx_orgs:
-                  context: LWC-RECIPES
+                  context: trailhead
+                  requires:
                   requires:
                       - install_cli
                       - lint_aura
