@@ -20,7 +20,7 @@ before_install:
 - sfdx force:auth:jwt:grant --clientid 3MVG9i1HRpGLXp.pZdtFKi4uPZ4HaPaB8r693O7sQaDSuYWqJ.rzVMkG2NZByQ4JFMCrfqLfl.d6M5MPxt9ZP --username manohar@elearning.com --jwtkeyfile  travis/server.key --setdefaultdevhubusername -a HubOrg
 
 script:
-- sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a ciorg 
+- sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a ciorg
 - sfdx force:org:display -u ciorg
 - sfdx force:source:push -u ciorg
 - sfdx force:apex:test:run -u ciorg --wait 10
